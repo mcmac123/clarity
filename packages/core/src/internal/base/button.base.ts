@@ -25,7 +25,9 @@ import { buttonSubmit } from '../controllers/button-submit.controller.js';
 @buttonSubmit<CdsBaseButton>()
 @buttonAnchor<CdsBaseButton>()
 export class CdsBaseButton extends LitElement {
-  @property({ type: Boolean }) readonly = false;
+  @property({ type: Boolean }) pressed: boolean;
+
+  @property({ type: Boolean }) readonly: boolean;
 
   @property({ type: String }) type: 'button' | 'submit';
 
@@ -36,6 +38,4 @@ export class CdsBaseButton extends LitElement {
   @property({ type: Boolean }) disabled = false;
 
   @property({ type: String }) popup: string;
-
-  @property({ type: Boolean }) pressed: boolean;
 }

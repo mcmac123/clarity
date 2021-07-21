@@ -32,6 +32,7 @@ import styles from './button-action.element.scss';
  * @cssprop --padding
  * @cssprop --outline
  * @cssprop --outline-offset
+ * @property pressed - boolean
  */
 export class CdsButtonAction extends CdsBaseButton {
   @property({ type: String }) shape: string;

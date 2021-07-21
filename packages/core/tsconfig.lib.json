@@ -12,6 +12,7 @@
   "allowSyntheticDefaultImports": false,
   "exclude": [
     "**/*.spec.ts",
+    "**/*.a11y.ts",
     "**/*.performance.ts",
     "dist",
     "node_modules",
